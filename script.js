@@ -13,10 +13,10 @@ function is_palindrome(str) {
     // same as string it is palindrome
     // else not a palindrome
     if (reverse_str === str) {
-        console.log("true");
+        console.log(true);
     }
     else {
-        console.log("false")
+        console.log(false)
     }
 
 }
