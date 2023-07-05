@@ -1,27 +1,16 @@
-function check_palindrome(str) {
-    let j = str.length - 1;
-    for (let i = 0; i < j / 2; i++) {
-        let x = str[i];//forward character
-        let y = str[j - i];//backward character
-        if (x != y) {
-            // return false if string not match
-            return false;
-        }
-    }
-    /// return true if string is palindrome
-    return true;
+// complete the given function
  
+function palindrome(str){
+    let ch="" ;
+	str=str.toLowerCase();
+	for (let i = (str.length-1); i >=0 ; i--) {
+		ch+=str[i];
+	
+	}
+	if(ch==str){
+		return true;
+	}else{
+		return false;
+	}
 }
- 
-//function that print output if string is palindrome
-function is_palindrome(str) {
-    // variable that is true if string is palindrome
-    let ans = check_palindrome(str);
-    //condition checking ans is true or not
-    if (ans == true) {
-        console.log(true);
-    }
-    else {
-        console.log(false);
-    }
-}
+module.exports = palindrome
